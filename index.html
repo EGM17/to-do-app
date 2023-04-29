@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edgar Morales - Workspace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Edgar Morales - Workspace</h1>
+    <form>
+      <label for="task">Tarea o actividad:</label>
+      <input type="text" id="task" required>
+      <label for="client">Cliente o Empresa:</label>
+      <input type="text" id="client" required>
+      <label for="date">Fecha de entrega:</label>
+      <input type="date" id="date" required>
+      <label for="time">Hora de entrega:</label>
+      <input type="time" id="time" required>
+      <button type="submit" id="addTask">Agregar actividad</button>
+    </form>
+    <ul id="taskList"></ul>
+    <div>
+      <button type="button" id="printTasks">Imprimir tareas</button>
+      <button type="button" id="sendTasksByEmail">Envíar tareas</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
